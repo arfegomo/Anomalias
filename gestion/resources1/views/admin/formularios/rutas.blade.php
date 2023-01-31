@@ -1,0 +1,166 @@
+@extends('master')
+@section('titulo','Evaluación de calidad de productos')
+
+@section('contenido1')
+
+<b>Rutas</b>
+
+@endsection
+
+@section('contenido2')
+
+                <div class="panel panel-default ">
+                    <div class="panel-heading">
+                        Elija su ruta:
+                        <ul class="pull-right panel-settings panel-button-tab-right">
+                            <li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
+                                <em class="fa fa-cogs"></em>
+                            </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                        <ul class="dropdown-settings">
+                                            <li><a href="#">
+                                                <em class="fa fa-cog"></em> Settings 1
+                                            </a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">
+                                                <em class="fa fa-cog"></em> Settings 2
+                                            </a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">
+                                                <em class="fa fa-cog"></em> Settings 3
+                                            </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
+                    <div class="panel-body timeline-container">
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-ok"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <a href="{{ route('calidad-productos',array('id'=>1)) }}"><h4 class="timeline-title">Evaluación de productos recibidos</h4></a>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at sodales nisl. Donec malesuada orci ornare risus finibus feugiat.</p>-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-wrench"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <a href="http://10.10.20.99/maquinas/login_maquinas.php" target="_blank"><h4 class="timeline-title">Tickets mantenimiento</h4></a>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-wrench"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                       <a href="http://10.10.20.99/equiposdecomputo/login_sistemas.php" target="_blank"><h4 class="timeline-title">Tickets sistemas</h4></a>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at sodales nisl. Donec malesuada orci ornare risus finibus feugiat.</p>-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-paperclip"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <a href="{{ route('formatos-bpm') }}"><h4 class="timeline-title">Formatos BPM</h4></a>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-paperclip"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <a href="{{ route('formato-consignacion') }}"><h4 class="timeline-title">Formato registro diario de consignación</h4></a>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-usd"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <a href="{{ route('formatos-mercadeo') }}"><h4 class="timeline-title">Formatos Mercadeo</h4></a>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-signal"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <a href="http://10.10.20.99/wifis/software/index2.php" target="_blank"><h4 class="timeline-title">Consulta de claves wifi</h4></a>
+                                    </div>
+                                    <!--<div class="timeline-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-paperclip"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <a href="{{ route('factura-electronica') }}"><h4 class="timeline-title">Solictud factura personalizada</h4></a>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-paperclip"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <a href="{{ route('covid-19') }}"><h4 class="timeline-title">Seguimiento covid-19</h4></a>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-paperclip"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <a href="https://elgualilo.com/covid-19/fro/responseeve/login.php" target="_blank"><h4 class="timeline-title">Registro de personas (El gualilo)</h4></a>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-paperclip"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <a href="{{ route('covid-19-terrazacafe') }}"><h4 class="timeline-title">Registro de personas (Terraza Cafe)</h4></a>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+@endsection
